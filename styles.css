@@ -124,16 +124,21 @@ p {
     display: inline-block; /* Permite ajustar el tamaño del contenedor a la imagen */
 }
 
+.imgGoldBanner-container img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en la parte inferior de la imagen */
+}
+
 .texto {
     position: absolute; /* Posiciona el texto sobre la imagen */
     top: 30%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta el punto de referencia para centrar */
     color: rgb(0, 0, 0); /* Color del texto */
-    font-size: 24px; /* Tamaño de la fuente */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para mejorar la legibilidad */
     font-family: 'Tangerine', serif;
-    font-size: 50px; /* Tamaño del texto */
+    font-size: 8vw;
     font-weight: bold;
 }
 
