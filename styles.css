@@ -4,6 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: black;
 }
 .marco {
@@ -12,13 +13,13 @@ body {
     border: 10px solid white;
     border-radius: 15px;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
-    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white; /* Color del texto */
     text-align: center; /* Alinear el texto al centro */
+    flex-direction: column;
 }
 .fondo {
     width: 100%;
@@ -54,6 +55,81 @@ body {
     font-size: 2.5em; /* Tamaño de la fuente */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para el texto */
     opacity: 1; /* Ajusta el valor de opacidad aquí */
+}
+
+.cronometro {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+}
+
+.text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; /* Espacio entre el texto y el cronómetro */
+    text-align: center; /* Centra el texto */
+    z-index: 2;
+    border-radius: 10px;
+    font-family: "Qwitcher Grypen", cursive;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.box {
+
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #e7b81c;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box span {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.box small {
+    display: block;
+    font-size: 1rem;
+    text-align: center; /* Centrando el texto de izquierda a derecha */
+    text-transform: uppercase;
+    color: #e7b81c;
+}
+
+@media (max-width: 600px) {
+    .box {
+        padding: 15px;
+        min-width: 9%;
+    }
+
+    .box span {
+        font-size: 1.5rem;
+    }
+
+    .box small {
+        font-size: 0.55rem;
+    }
 }
 
 h1 {
