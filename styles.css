@@ -1,11 +1,18 @@
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100%; /* Altura mínima del body */
+    height: auto; /* Permitir crecimiento indefinido */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: black;
+    background-image: url('public/img/fondo.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Colocar la imagen detrás del texto */
 }
 .marco {
     width: 80%;
@@ -21,17 +28,6 @@ body {
     text-align: center; /* Alinear el texto al centro */
     flex-direction: column;
 }
-.fondo {
-    width: 100%;
-    height: 100%;
-    background-image: url('public/img/fondo.jpg'); /* Cambia esto a la ruta de tu imagen */
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Colocar la imagen detrás del texto */
-}
 
 .container {
     display: flex;
@@ -44,12 +40,11 @@ body {
 .card {
     max-width: 100%; /* No exceder el ancho del contenedor */
     max-height: 100%; /* No exceder la altura del contenedor */
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 1000px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
     position: relative; /* Para que el título esté en la parte superior de la imagen */
     z-index: 1; /* Colocar el texto por encima de la imagen */
     font-size: 2.5em; /* Tamaño de la fuente */
@@ -71,7 +66,7 @@ body {
     flex-direction: column;
 }
 
-.text {
+.textoCronometro {
     font-size: 3rem;
     font-weight: bold;
     color: #333;
@@ -206,7 +201,7 @@ p {
     display: block; /* Elimina el espacio en la parte inferior de la imagen */
 }
 
-.texto {
+.textoCinta {
     position: absolute; /* Posiciona el texto sobre la imagen */
     top: 30%; /* Centra verticalmente */
     left: 50%; /* Centra horizontalmente */
