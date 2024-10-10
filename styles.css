@@ -234,3 +234,63 @@ p {
         transform: translateY(0); /* Termina en su posición original */
     }
 }
+
+.textoInvitacion {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin-bottom: 15px; /* Espacio entre el texto y el cronómetro */
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+    z-index: 2;
+    font-family: "Dancing Script", cursive;
+}
+  
+.textoImportante {
+    color: #2c3e50; /* Texto azul oscuro discreto */
+    border: 2px solid #e7b81c; /*  #95a5a6; Borde gris suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: zoomEffect 2s ease-in-out infinite; /* Aplicar la animación zoomEffect */
+}
+
+@keyframes zoomEffect {
+    0%, 100% {
+        transform: scale(1); /* Tamaño original */
+    }
+    50% {
+        transform: scale(1.05); /* Ampliación al 105% */
+    }
+}
+
+.textoImportante:hover {
+    background-color: #d6dce6; /* Fondo gris muy suave al pasar el ratón */
+    color: #34495e; /* Texto ligeramente más oscuro en hover */
+    border-color: #7f8c8d; /* Borde gris más oscuro en hover */
+}
+
+.map-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #e7b81c, #e7b81c); /* Gradiente dorado */
+    color: #000; /* Texto negro */
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 1.2em; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.map-button:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el ratón */
+}
+
+.map-button:active {
+    transform: scale(0.95); /* Efecto de compresión al hacer clic */
+}
