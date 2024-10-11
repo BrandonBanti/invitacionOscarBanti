@@ -74,7 +74,7 @@ body {
     text-align: center; /* Centra el texto */
     z-index: 2;
     border-radius: 10px;
-    font-family: "Qwitcher Grypen", cursive;
+    font-family: 'Tangerine', serif;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -246,12 +246,13 @@ p {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
     z-index: 2;
-    font-family: "Dancing Script", cursive;
+ 
 }
   
 .textoImportante {
-    color: #2c3e50; /* Texto azul oscuro discreto */
-    border: 2px solid #e7b81c; /*  #95a5a6; Borde gris suave */
+    color: #000000; /* Texto azul oscuro discreto */
+    font-size: 0.8rem;
+    border: 2px solid  #95a5a6; /*Borde gris suave */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: zoomEffect 2s ease-in-out infinite; /* Aplicar la animación zoomEffect */
