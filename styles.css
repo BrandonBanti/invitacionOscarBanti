@@ -278,7 +278,7 @@ p {
     background: linear-gradient(135deg, #e7b81c, #e7b81c); /* Gradiente dorado */
     color: #000; /* Texto negro */
     padding: 15px 30px; /* Espaciado interno */
-    font-size: 1.2em; /* Tamaño de fuente */
+
     border: none; /* Sin borde */
     border-radius: 25px; /* Bordes redondeados */
     text-decoration: none; /* Sin subrayado */
@@ -294,4 +294,32 @@ p {
 
 .map-button:active {
     transform: scale(0.95); /* Efecto de compresión al hacer clic */
+}
+
+.contenedorBoleto {
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    
+    margin-top: 20 px;
+    margin-bottom: 20px;
+}
+
+.botonBoleto {
+    margin-top: 20 px;
+    margin-bottom: 20px;  
+}
+
+.textoBajaBoleto {
+    margin-top: 0;
+    position: relative; /* Para que el título esté en la parte superior de la imagen */
+    z-index: 1; /* Colocar el texto por encima de la imagen */
+    font-size: 40px; /* Tamaño de la fuente */
+    color:  #000000;; /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para el texto */
+    animation: bajar 3s ease forwards; /* Aplicar animación */
+    transform: translateY(-100%); /* Iniciar desde arriba */
+    font-family: 'Tangerine', serif;
+    font-weight: bold;
 }
