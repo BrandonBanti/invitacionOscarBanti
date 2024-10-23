@@ -1,4 +1,4 @@
-const targetDate = new Date("Jan 11, 2025 18:00:00").getTime();
+const targetDate = new Date("Jan 11, 2025 19:00:00").getTime();
 
 const countdown = setInterval(() => {
 const now = new Date().getTime();
