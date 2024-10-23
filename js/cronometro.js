@@ -15,7 +15,9 @@ document.getElementById("minutes").innerText = minutes;
 document.getElementById("seconds").innerText = seconds;
 
 if (timeLeft < 0) {
-    clearInterval(countdown);
-    document.querySelector(".container").innerHTML = "<h2>¡Feliz Año Nuevo!</h2>";
+    document.getElementById("days").innerText = 0;
+    document.getElementById("hours").innerText = 0;
+    document.getElementById("minutes").innerText = 0;
+    document.getElementById("seconds").innerText = 0;
 }
 }, 1000);
